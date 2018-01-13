@@ -6,7 +6,7 @@ defscrollback 10000
 zombie qr
 verbose on
 
-screen rails s
+screen script/rails s -b 0.0.0.0 --pid=/tmp/dev.pid
 title "rails server"
 
 screen script/background_daemon run
